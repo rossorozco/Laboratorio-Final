@@ -79,7 +79,7 @@ void nombreApellido(){
 void ingresoDatos(){
 	dpi();
 	codigoEmpleado();
-	nombreApellido();
+	//nombreApellido();
 }
 
 // primero = 45    ultimo = 12      actual = 12       encontrado = false           nodoBuscado = 7               45, 6, 7 , 12
@@ -141,8 +141,8 @@ void buscarNombreApellido(){
 	actualTres = primeroTres;
 	bool encontradoTres = false;
 	int nodoTresBuscado = 0;
+	cout << " Por favor colocar el nombre completo del empleado\n";
 	cout << " Ingrese el nombre completo del empleado a Buscar: \n";
-	cout << " Por favor colocar el nombre completo ";
 	cin >> nodoTresBuscado;
 	if(primeroTres != NULL){
 		while(actualTres!=NULL && encontradoTres != true){
@@ -183,7 +183,8 @@ int buscar(){
 		cout<< endl <<"Ingrese que tipo de busqueda desea realizar\n";
 		cout<< endl <<"1. Desea buscar por DPI?\n";
 		cout<< endl <<"2. Desea buscar por codigo empleado?\n";
-		cout<< endl <<"3. Salir\n";
+		cout<< endl <<"3. Desea buscar por nombre completo?\n";
+		cout<< endl <<"4. Salir\n";
 		cout << endl << endl << " Escoja una Opcion: ";
 		cin >> opcion_busqueda;
 		system("cls");
