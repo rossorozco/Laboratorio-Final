@@ -79,7 +79,7 @@ void nombreApellido(){
 void ingresoDatos(){
 	dpi();
 	codigoEmpleado();
-	//nombreApellido();
+	nombreApellido();
 }
 
 // primero = 45    ultimo = 12      actual = 12       encontrado = false           nodoBuscado = 7               45, 6, 7 , 12
